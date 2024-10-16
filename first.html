@@ -1,5 +1,207 @@
-<p>
-    This is html file. and i am use this file daily.
-    Hello i am prachi pandey and what about you !!!!
-    
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #358597;
+            border: 5px solid #d9ecf3;
+            font-family: "Playfair Dispaly", serif;
+            font-size: 30px;
+            margin-top: 5%;
+            margin-right: 30%;
+            margin-left: 30%;
+            
+        }
+
+        .title{
+            padding: 25px 37px;
+            color: white;
+            background-color: #00203fff;
+            border-radius: 5px;
+            font-size: 30px;
+             
+        }
+
+        .form{
+            margin: 11px 13px;
+            padding: 5px 6px;
+            font-size: 30px;
+            margin-right: 30%;
+            margin-left: 30%; 
+        }
+
+        button{
+            color: white;
+            background-color: #00203fff;
+            text-decoration: black;
+            font-size: 30px;
+        }
+
+        #txt1{
+             font-size: 30px;
+        }
+        #txt2{
+             font-size: 30px;
+        }
+
+        #txt3{
+             font-size: 30px;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <header class="title">
+            <div>
+                <h2>Arithmetic Operation</h2>
+                <h4>Please fill all the text in the feilds.</h4>
+            </div>
+        </header>
+    </div>
+
+    <div class="form">
+        
+        <form>
+            <div>
+                Enter First Number:<br>
+                <input type="text" id="txt1" name="txt1" placeholder="-----"/>
+            </div>
+            <br>
+            
+            <div>
+                Enter Second Number:<br>
+                <input type="text" id="txt2" name="txt2" placeholder="-----"/>
+            </div>
+            <br> 
+
+          <div>
+                Result:<br> 
+                <input type="text" id="txt3" name="txt3" disabled="true"/>  <br> <br> 
+                <button type="reset">Clear</button> <br> <br>
+            </div>
+
+            </form>
+
+        <button  onclick="add()">+</button>
+        <button  onclick="sub()">-</button>
+        <button  onclick="multi()">*</button>
+        <button  onclick="div()">/</button> <br> <br>
+        <br>
+
+        
+        <script type="text/javascript">
+
+            function add(){
+               
+                let x,y,z,a,b;
+                x=parseFloat(document.getElementById("txt1").value);
+                y=parseFloat(document.getElementById("txt2").value);
+                a=parseFloat(document.getElementById("txt1").value);
+                b=parseFloat(document.getElementById("txt2").value);
+
+                if(a=="" && b==""){
+                    alert("Please filled out");
+                }
+                if(a=="" || b==""){
+                    alert("Please filled out");
+                }
+                if(isNaN(x) || isNaN(y)){
+                    alert("invaid input");
+                }
+                else{
+                    z=x+y;
+                    document.getElementById("txt3").value= z;
+                }
+            
+            }
+
+            function sub(){
+                
+                let x,y,z,a,b;
+                x=parseFloat(document.getElementById("txt1").value);
+                y=parseFloat(document.getElementById("txt2").value);
+                a=parseFloat(document.getElementById("txt1").value);
+                b=parseFloat(document.getElementById("txt2").value);
+
+                if(a=="" && b==""){
+                    alert("Please filled out");
+                }
+                if(a=="" || b==""){
+                    alert("Please filled out");
+                }
+                if(isNaN(x) || isNaN(y)){
+                    alert("invaid input");
+                }
+                else{
+                    z=x-y;
+                    document.getElementById("txt3").value= z;
+                }
+            
+            }
+
+            function multi(){
+                
+                let x,y,z,a,b;
+                x=parseFloat(document.getElementById("txt1").value);
+                y=parseFloat(document.getElementById("txt2").value);
+                a=parseFloat(document.getElementById("txt1").value);
+                b=parseFloat(document.getElementById("txt2").value);
+
+                if(a=="" && b==""){
+                    alert("Please filled out");
+                }
+                if(a=="" || b==""){
+                    alert("Please filled out");
+                }
+                if(isNaN(x) || isNaN(y)){
+                    alert("invaid input");
+                }
+                else{
+                    z=x*y;
+                    document.getElementById("txt3").value= z;
+                }
+            
+            }
+
+            function div(){
+               
+                let x,y,z,a,b;
+                x=parseFloat(document.getElementById("txt1").value);
+                y=parseFloat(document.getElementById("txt2").value);
+                a=parseFloat(document.getElementById("txt1").value);
+                b=parseFloat(document.getElementById("txt2").value);
+
+                if(a=="" && b==""){
+                    alert("Please filled out");
+                }
+                if(a=="" || b==""){
+                    alert("Please filled out");
+                }
+                if(isNaN(x) || isNaN(y)){
+                    alert("invaid input");
+                }
+                else{
+                    z=x/y;
+                    document.getElementById("txt3").value= z;
+                }
+            
+            }
+
+
+
+
+
+        </script>
+
+    </div>
+
+
+</body>
+</html>
